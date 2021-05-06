@@ -1,0 +1,34 @@
+{  
+  "Currency": [  
+      {  
+        "ISOCode": "USD",  
+        "Description": "US Dollar",
+        "Allowed": "true",
+        "ConversionFactor": "1"
+      },  
+      {  
+        "ISOCode": "ARS",  
+        "Description": "Argentina Peso",
+        "Allowed": "false",
+        "ConversionFactor": "0.05"
+      },  
+      {  
+        "ISOCode": "BRL",  
+        "Description": "Brazilian Read",
+        "Allowed": "true",
+        "ConversionFactor": "0.25"
+      },  
+      {  
+        "ISOCode": "CAD",  
+        "Description": "CAD Dollar",
+        "Allowed": "false",
+        "ConversionFactor": "0.9"
+      },  
+      {  
+        "ISOCode": "EUR",  
+        "Description": "Euro",
+        "Allowed": "false",
+        "ConversionFactor": "1.2"  
+      }  
+    ]  
+  } 

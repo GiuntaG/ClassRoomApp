@@ -1,6 +1,6 @@
 using System;
 
-namespace ClassroomApp
+namespace Exercises
 {
     public class WeatherForecast
     {

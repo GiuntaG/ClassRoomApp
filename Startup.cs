@@ -10,9 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ClassroomApp.Services;
+//using ClassroomApp.Services;
+using Exercises.Services;
+//using ExchangeRateApp.Services;
 
-namespace ClassroomApp
+namespace Exercises
 {
     public class Startup
     {
@@ -27,8 +29,10 @@ namespace ClassroomApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddSingleton<IClassroomService, ClassroomService>();
+            services.AddSingleton<IConfiguration>(Configuration);
+            //services.AddSingleton<IClassroomService, ClassroomService>();
+            services.AddSingleton<ISimplifyFractionService, SimplifyFractionService>();
+            //services.AddSingleton<IExchangeRateService, ExchangeRateService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
